@@ -26,11 +26,13 @@
       }
     </style>
     <script>
+      setInterval(changeText, 8000);
+
       var text = document.getElementByClassName('those-involved');
       function changeText() {
         setTimeout(changeTextToThoseContributing, 2000);
         setTimeout(changeTextToThoseHelping, 2000);
-        setTimeout
+        setTimeout(changeTextToThoseInvolved, 2000);
       }
       
       function changeTextToThoseContributing() {
