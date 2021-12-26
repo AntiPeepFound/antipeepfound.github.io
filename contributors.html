@@ -23,31 +23,12 @@
         .banner {
           width: 100%;
         }
-      }
     </style>
     <script>
-      setInterval(changeText, 2000);
-
       var text = document.getElementByClassName('those-involved');
-      function changeText() {
-        setTimeout(changeTextToThoseContributing, 0001);
-        setTimeout(changeTextToThoseHelping, 0001);
-        setTimeout(changeTextToThoseInvolved, 0001);
-      }
-      
-      function changeTextToThoseContributing() {
-        text.innerHTML = 'Those Contributing';
-      }
-
-      function changeTextToThoseHelping() {
-        text.innerHTML = 'Those Helping';
-      }
-
-      function changeTextToThoseInvolved() {
-        text.innerHTML = 'Those Involved';
-      }
-
-      
+      setInterval(text.innerHTML = 'Those Contributing', 2000);
+      setInterval(text.innerHTML = 'Those Helping', 4000);
+      setInterval(text.innerHTML = 'Those Involved', 6000);
     </script>
   </head>
   <body>
