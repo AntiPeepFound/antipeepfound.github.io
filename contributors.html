@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <style>
       body {
         text-align: center;
@@ -25,10 +26,16 @@
         }
     </style>
     <script>
-      var text = document.getElementByClassName('those-involved');
-      setInterval(text.innerHTML = 'Those Contributing', 2000);
-      setInterval(text.innerHTML = 'Those Helping', 4000);
-      setInterval(text.innerHTML = 'Those Involved', 6000);
+      $(function () {
+        count = 0;
+        wordsArray = ["Those Contributing", "Those Helping", "Those Involved"];
+        setInterval(function () {
+          count++;
+          $(".those-involved").fadeOut(400, function () {
+            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+          });
+        }, 2000);
+      });
     </script>
   </head>
   <body>
