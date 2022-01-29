@@ -34,7 +34,7 @@ function pickColor() {
 }
 
 function draw() {
-  background(0);
+  //background(0);
   // rect(x, y, 80, 60);
   // Draw the DVD logo
   //tint(r, g, b);
