@@ -15,7 +15,7 @@ let dvd;
 let r, g, b;
 
 function preload() {
-  dvd = loadImage('err404.png');
+  dvd = loadImage('/assets/err404.png');
 }
 
 function setup() {
