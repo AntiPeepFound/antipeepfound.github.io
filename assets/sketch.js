@@ -22,8 +22,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   x = random(width);
   y = random(height);
-  xspeed = 7;
-  yspeed = 7;
+  xspeed = 8.5;
+  yspeed = 8.5;
   pickColor();
 }
 
