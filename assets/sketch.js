@@ -37,7 +37,7 @@ function draw() {
   background(0);
   // rect(x, y, 80, 60);
   // Draw the DVD logo
-  tint(r, g, b);
+  //tint(r, g, b);
   image(dvd, x, y);
 
   x = x + xspeed;
