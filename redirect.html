@@ -23,6 +23,8 @@
       
         if (redirectLink == 'apf-youtube' || redirectLink == 'APF-youtube' || redirectLink == 'apf-yt' || redirectLink == 'APF-YT') {
             location.replace('https://www.youtube.com/channel/UCAkDhoI3XUphjitlgMwmrVg');
+        } else if (redirectLink == 'interview' || redirectLink == 'interview-application' || redirectLink == 'interview-app') {
+            location.replace('https://docs.google.com/forms/d/e/1FAIpQLSfoGVsgB0_nkLwd7UyjC06NcQYewilVVAzrbWTAPScQshTkEA/viewform?usp=sf_link');
         } else if (str_pos1 > -1 || str_pos2 > -1) {
             location.replace(redirectLink);
         } else {
